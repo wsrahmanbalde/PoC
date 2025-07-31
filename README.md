@@ -1,20 +1,20 @@
-# 💬 PoC - Chat Temps Réel (Angular 19 + Spring Boot + PostgreSQL)
+# PoC - Chat Temps Réel (Angular 19 + Spring Boot + PostgreSQL)
 
 Ce projet est un **Proof of Concept (PoC)** pour un système de **chat en temps réel** entre un **Client** et un **Agent**, utilisant :
 
-- 🧠 **Angular 19** (Frontend standalone)
-- ⚙️ **Spring Boot 3+** (Backend WebSocket avec STOMP & SockJS)
-- 🛢️ **PostgreSQL** (Base de données pour persister les messages)
+-  **Angular 19** (Frontend standalone)
+-  **Spring Boot 3+** (Backend WebSocket avec STOMP & SockJS)
+-  **PostgreSQL** (Base de données pour persister les messages)
 
 ---
 
-## 🧪 Objectif
+##  Objectif
 
 Valider la **faisabilité technique** d’un système de messagerie instantanée, avec synchronisation des messages en temps réel, sans rechargement de page. Le PoC permet de simuler une conversation instantanée entre deux utilisateurs (client et agent) via deux fenêtres ou navigateurs différents.
 
 ---
 
-## 📦 Technologies utilisées
+## Technologies utilisées
 
 | Couche          | Technologie               |
 |-----------------|---------------------------|
@@ -26,31 +26,31 @@ Valider la **faisabilité technique** d’un système de messagerie instantanée
 
 ---
 
-## 🛠️ Prérequis
+## Prérequis
 
 Avant de commencer, assurez-vous d’avoir :
 
-- ✅ Node.js ≥ 18
-- ✅ npm ≥ 9
-- ✅ Angular CLI ≥ 16
-- ✅ Java ≥ 17
-- ✅ PostgreSQL (avec un schéma configuré)
-- ✅ Backend configuré avec STOMP + SockJS
+-  Node.js ≥ 18
+-  npm ≥ 9
+-  Angular CLI ≥ 16
+-  Java ≥ 17
+-  PostgreSQL (avec un schéma configuré)
+-  Backend configuré avec STOMP + SockJS
 
 ---
 
-## ⚙️ Installation
+## Installation
 
-### 🔁 Cloner le projet
+### Cloner le projet
 
 ```bash
 git clone https://github.com/wsrahmanbalde/scriptSQL.git
 cd PoC
 
-### 📦 Installer les dépendances
+### Installer les dépendances
 🛠️ Installation et lancement
 
-### 📦 Backend - Spring Boot
+### Backend - Spring Boot
 	1.	Se rendre dans le dossier backend :
 ```bash
 cd chat-backend
@@ -61,13 +61,13 @@ cd chat-backend
 Cela démarre l’API REST + WebSocket à l’adresse : http://localhost:8080
 Le WebSocket est accessible à : ws://localhost:8080/ws
 
-### 💻 Frontend - Angular 19
+### Frontend - Angular 19
 	1.	Aller dans le dossier chat-frontend : ```bash cd chat-frontend
 	2.	Installer les dépendances : npm install
 	3.	Lancer l’application Angular : npm start
 L’interface est disponible à : http://localhost:4200
 
-🧪 Tester le PoC
+Tester le PoC
 	1.	Ouvrir deux fenêtres de navigateur (ou deux navigateurs différents).
 	2.	Dans chaque fenêtre, entrez un nom d’utilisateur unique (ex : ClientUser et AgentUser) lorsqu’on vous le demande.
 	3.	Écrivez un message dans une fenêtre, cliquez sur “Envoyer”.
